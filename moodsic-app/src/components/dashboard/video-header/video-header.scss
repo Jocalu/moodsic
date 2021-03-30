@@ -1,0 +1,43 @@
+.header__video-container {
+  width: 100%;
+  top: -260px;
+  position: relative;
+  z-index: -1;
+  max-height: 700px;
+}
+
+.video::-webkit-media-controls {
+  display: none;
+}
+
+.video:focus {
+  outline: none;
+}
+
+.header__slogan {
+  font-family: "Noto Serif", serif;
+  color: var(--letters-color);
+  margin-top: -550px;
+  font-size: 40px;
+  margin-left: 60%;
+  z-index: 1;
+  font-weight: 400 impor;
+}
+
+span {
+  color: var(--yellow);
+}
+
+@media only screen and (max-width: 600px) {
+  .header__slogan {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    text-indent: 30px;
+    margin-left: 40%;
+    padding-top: 30px;
+  }
+  .header__video-container {
+    display: none;
+  }
+}

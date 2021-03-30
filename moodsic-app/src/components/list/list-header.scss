@@ -1,0 +1,15 @@
+.header-moods__text {
+  display: flex;
+  font-family: "Noto Serif", serif;
+  color: var(--letters-color);
+  font-size: 24px;
+  line-height: 1.5;
+  z-index: 1;
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-moods__text {
+    font-size: 20px;
+  }
+}

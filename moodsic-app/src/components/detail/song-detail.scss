@@ -1,0 +1,145 @@
+.header-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  height: 367px;
+}
+
+.header-detail__img-container {
+  width: 40%;
+  z-index: -2;
+  opacity: 0.3;
+}
+
+.header-detail__img-container img {
+  position: absolute;
+  width: 100%;
+  top: -240px;
+}
+
+.header-detail__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Noto Serif", serif;
+  color: var(--letters-color);
+  line-height: 1.5;
+  font-size: 24px;
+  z-index: 1;
+  width: 50%;
+}
+
+.header-detail__text p {
+  margin-bottom: 20px;
+}
+
+.detail-container {
+  background: var(--letters-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px 0;
+}
+
+.detail__player {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 70%;
+  background: var(--background);
+  height: 50px;
+  border-radius: 6px;
+  margin: 10px;
+  margin-left: 15%;
+  cursor: pointer;
+  box-shadow: 5px 5px 2px 0px rgba(86, 144, 149, 0.75);
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(86, 144, 149, 0.75);
+  -moz-box-shadow: 5px 5px 2px 0px rgba(86, 144, 149, 0.75);
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.play-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border-radius: 6px;
+  background-color: var(--yellow);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.play-icon {
+  font-size: 30px;
+}
+
+.heart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  font-size: 26px;
+  color: gray;
+  position: absolute;
+  right: 3px;
+  top: 12px;
+}
+.heart-container:focus .heart-icon {
+  color: var(--yellow);
+}
+
+.detail__song-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-indent: 20px;
+  color: var(--letters-color);
+  font-family: "Noto Serif", serif;
+}
+
+.video-container {
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  border: 2px solid var(--background);
+  width: 350px;
+  height: 250px;
+  margin-top: -20px;
+  margin-left: 35%;
+  z-index: 1;
+  border-radius: 6px;
+  display: block;
+}
+
+.detail__player:focus {
+  outline: none;
+}
+
+.detail__player:hover {
+  left: 2px;
+}
+.video-container:hover {
+  width: 700px;
+  height: 500px;
+  margin-left: 22%;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-detail__text p {
+    font-size: 18px;
+  }
+  .header-detail__img-container img {
+    top: -10px;
+  }
+  .header-detail {
+    height: 267px;
+  }
+}

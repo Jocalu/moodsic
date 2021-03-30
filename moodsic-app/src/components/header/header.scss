@@ -1,0 +1,166 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header__navbar {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+  top: 0;
+  font-family: "Montserrat", sans-serif;
+  color: var(--letters-color);
+  font-size: 16px;
+}
+
+button {
+  all: unset;
+}
+
+.bars-icon {
+  display: none;
+}
+
+.logo--play {
+  font-family: "Dancing Script", cursive;
+  color: var(--yellow);
+  position: absolute;
+  margin-left: 20px;
+  left: 35px;
+  top: 5px;
+  font-size: 24px;
+  transform: rotate(320deg);
+}
+
+.logo-container {
+  position: absolute;
+  margin: 10px 0 0 30px;
+  left: 40px;
+  width: 100px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.nav__link {
+  margin: 0 20px;
+  padding: 5px 10px;
+  border: solid 2px transparent;
+  position: relative;
+}
+
+.dropdown {
+  font-size: 12px;
+  height: 20px;
+  margin: 3px;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.link {
+  color: var(--letters-color);
+  text-decoration: none;
+}
+
+.user-icon {
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+input:focus,
+.nav__link:focus {
+  outline: none;
+}
+
+.nav__link:hover {
+  cursor: pointer;
+  border: solid 2px var(--yellow);
+  color: var(--yellow);
+}
+
+.user-picture {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.user-picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    margin: 0;
+    width: 80px;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  .description {
+    margin-top: 0;
+  }
+  .header__navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    display: none;
+    min-width: 200px;
+    min-height: 160px;
+    border-radius: 6px;
+    border: 1px solid var(--letters-color);
+  }
+  .header__slogan {
+    font-size: 10px;
+  }
+  .bars-icon {
+    display: block;
+    font-size: 40px;
+  }
+  .bars-dropdown {
+    position: absolute;
+    margin-left: 60px;
+    height: 100px;
+    color: var(--letters-color);
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .moods,
+  .playmoodsic,
+  .login,
+  .profile {
+    position: absolute;
+  }
+  .moods {
+    top: 20px;
+  }
+  .playmoodsic {
+    top: 60px;
+  }
+  .login {
+    top: 100px;
+  }
+  .profile {
+    top: 140px;
+  }
+  .bars-dropdown:hover .header__navbar {
+    display: block;
+    background-color: rgb(24, 24, 23);
+    z-index: 2;
+    height: 190px;
+  }
+
+  .logo--play {
+    left: 90px;
+    top: 20px;
+  }
+
+  .user-picture img {
+    display: none;
+  }
+}

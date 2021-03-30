@@ -1,0 +1,65 @@
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  background: var(--letters-color);
+}
+.image-container {
+  cursor: pointer;
+  margin: 20px;
+}
+.image-container figure {
+  position: relative;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+.image-container figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease-out;
+}
+.image-container figure .image__text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 103, 123, 0.6);
+  opacity: 0;
+  text-align: center;
+  transition: all 500ms ease-out;
+}
+.image-container figure:hover > .image__text {
+  opacity: 1;
+  visibility: visible;
+}
+.image-container figure:hover > .image__text h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.image-container figure:hover > img {
+  transform: scale(1.1);
+}
+.image-container figure .image__text h3 {
+  color: white;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  margin-top: 30px;
+}
+.image-container figure .image__text p {
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.2;
+  max-width: 260px;
+  margin: auto;
+}

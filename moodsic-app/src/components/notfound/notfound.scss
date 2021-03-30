@@ -1,0 +1,18 @@
+.notfound-container {
+  width: 100%;
+  min-height: 600px;
+  background-color: rgb(238, 230, 227);
+  margin-top: 50px;
+  position: relative;
+}
+.notfound-container * {
+  position: absolute;
+  font-size: 40px;
+  top: 50px;
+  left: 50px;
+}
+
+.return {
+  top: 120px;
+  font-size: 24px;
+}
